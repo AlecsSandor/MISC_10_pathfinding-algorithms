@@ -1,0 +1,86 @@
+.node {
+    width: 20px;
+    height: 20px;
+    outline: 1px solid rgb(247, 247, 247);
+    display: inline-block;
+    border-radius: 100%;
+    scale: 0.8;
+    margin-top: -3px;
+  }
+  
+  .node-finish {
+    background-color: #FF5959;
+  }
+  
+  .node-start {
+    background-color: #4F9DA6;
+  }
+  
+  .node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: rgba(255, 246, 224, 0.75);
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: rgba(216, 217, 218, 0.75);
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(97, 103, 122, 0.75);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgba(39, 40, 41, 0.75);
+      outline: none;
+    }
+  }
+  
+  .node-wall {
+    background-color: rgba(237, 237, 237, 0.6);
+  }
+  
+  .node-shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes shortestPath {
+    0% {
+      transform: scale(0.6);
+      background-color: rgb(250, 207, 90);
+      box-shadow: 0px 0px 40px 4px rgb(250, 207, 90);
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: rgb(250, 207, 90);
+      box-shadow: 0px 0px 40px 4px rgb(250, 207, 90);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgb(250, 207, 90);
+      box-shadow: 0px 0px 40px 4px rgb(250, 207, 90);
+    }
+  }

@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(5, 10, 16);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.runButton {
+  padding: 20px;
+  background-color: rgb(12, 23, 32);
+  outline: none;
+  border: none;
+  color: rgb(220, 220, 220);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.absCenter {
+  left: 49%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  position: absolute;
+
 }
